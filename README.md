@@ -139,17 +139,17 @@ NestMetrics – Airbnb Smart Booking Insights/
 
 | 📍 Page / Feature            | 📸 Screenshot                                              |
 |:----------------------------|:-----------------------------------------------------------|
-| Dashboard                   | ![Dashboard](docs/Home_Page.png)                          |
-| Loading Screen              | ![Loading Screen](docs/Loading_Page.png)                  |
-| ML Price Predictor          | ![ML Predictor](docs/Prediction_Page.png)                 |
-| Smart Deal Finder           | ![Deal Finder](docs/Deal_Finder_Page.png)                 |
-| Booking Success Predictor   | ![Booking Success](docs/Booking_Success_Page.png)         |
-| Travel Intelligence         | ![Travel Insights](docs/Travel_Insights.png)              |
-| Host Analytics              | ![Host Insights](docs/Host_Insights.png)                  |
-| Property Listings           | ![Listings](docs/Listings_Page.png)                       |
-| Advanced Analytics          | ![Analytics](docs/Analytics_Page.png)                     |
-| Help & Support              | ![Help Page](docs/Help_And_Support.png)                   |
-| About Platform              | ![About Page](docs/About_Page.png)                        |
+| Loading Screen              | ![Loading Screen](./docs/Loading_Page.png)                |
+| Dashboard                   | ![Dashboard](./docs/Home_Page.png)                        |
+| ML Price Predictor          | ![ML Predictor](./docs/Prediction_Page.png)               |
+| Smart Deal Finder           | ![Deal Finder](./docs/Deal_Finder_Page.png)               |
+| Booking Success Predictor   | ![Booking Success](./docs/Booking_Success_Page.png)       |
+| Travel Intelligence         | ![Travel Insights](./docs/Travel_Insights.png)            |
+| Host Analytics              | ![Host Insights](./docs/Host_Insights.png)                |
+| Property Listings           | ![Listings](./docs/Listings_Page.png)                     |
+| Advanced Analytics          | ![Analytics](./docs/Analytics_Page.png)                   |
+| Help & Support              | ![Help Page](./docs/Help_And_Support.png)                 |
+| About Platform              | ![About Page](./docs/About_Page.png)                      |
 
 <br>
 
@@ -340,4 +340,4 @@ cd frontend && rm -rf node_modules && npm install
 
 **© 2025 NestMetrics – Airbnb Smart Booking Insights. All Rights Reserved.**
 
-</div># NestMetrics
+</div>
