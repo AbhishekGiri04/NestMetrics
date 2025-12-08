@@ -120,6 +120,13 @@ NestMetrics – Airbnb Smart Booking Insights/
 │   │   │   ├── 📄 Listings.jsx     # 📋 Property listings
 │   │   │   ├── 📄 Analytics.jsx    # 📊 Advanced analytics
 │   │   │   └── 📄 LoadingPage.jsx  # ⏳ Loading screen
+│   │   ├── 📄 App.jsx              # 🎯 Main app component
+│   │   ├── 📄 main.jsx             # 🚀 Entry point
+│   │   └── 📄 index.css            # 🎨 Global styles
+│   ├── 📄 .env.example             # 🔐 Environment variables template
+│   ├── 📄 package.json             # 📦 Dependencies
+│   ├── 📄 vite.config.js           # ⚡ Vite configuration
+│   └── 📄 tailwind.config.js       # 🎨 Tailwind configuration
 ├── 📂 backend/                     # 🔧 Flask backend service
 │   ├── 📂 models/                  # 🤖 ML models and data
 │   │   ├── 📄 model.pkl            # 🎯 Trained Random Forest (644MB)
@@ -128,6 +135,10 @@ NestMetrics – Airbnb Smart Booking Insights/
 │   │   └── 📄 Airbnb_Dataset.csv   # 📈 Original data (35MB)
 │   ├── 📄 app.py                   # 🚀 Flask application
 │   └── 📄 requirements.txt         # 📦 Python dependencies
+├── 📂 docs/                        # 📸 Screenshots and documentation
+├── 📂 notebooks/                   # 📓 Jupyter notebooks
+│   └── 📄 model_training.ipynb     # 🧪 ML model training
+├── 📄 vercel.json                  # ☁️ Vercel deployment config
 ├── 📄 start.sh                     # 🚀 Start all services
 ├── 📄 .gitignore                   # 🚫 Git ignore rules
 └── 📄 README.md                    # 📖 Project documentation
