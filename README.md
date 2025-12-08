@@ -138,7 +138,6 @@ NestMetrics – Airbnb Smart Booking Insights/
 ├── 📂 docs/                        # 📸 Screenshots and documentation
 ├── 📂 notebooks/                   # 📓 Jupyter notebooks
 │   └── 📄 model_training.ipynb     # 🧪 ML model training
-├── 📄 vercel.json                  # ☁️ Vercel deployment config
 ├── 📄 start.sh                     # 🚀 Start all services
 ├── 📄 .gitignore                   # 🚫 Git ignore rules
 └── 📄 README.md                    # 📖 Project documentation
