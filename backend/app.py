@@ -51,6 +51,20 @@ except Exception as e:
 
 print("🚀 Backend initialization complete!")
 
+@app.route('/', methods=['GET'])
+def home():
+    return jsonify({
+        'message': 'NestMetrics API is running!',
+        'status': 'success',
+        'endpoints': {
+            'test': '/api/test',
+            'stats': '/api/stats',
+            'ml_predict': '/api/ml-predict',
+            'find_deals': '/api/find-deals',
+            'booking_score': '/api/booking-score'
+        }
+    })
+
 @app.route('/api/test', methods=['GET'])
 def test():
     return jsonify({'message': 'Backend is working!', 'status': 'success'})
