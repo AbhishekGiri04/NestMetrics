@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: nestmetrics-backend
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app.py
+    envVars:
+      - key: FLASK_ENV
+        value: production
+      - key: FLASK_RUN_PORT
+        value: 10000

@@ -653,8 +653,8 @@ def booking_optimizer():
         return jsonify({'error': str(e)}), 500
 
 if __name__ == '__main__':
-    port = int(os.environ.get('FLASK_RUN_PORT', 5001))
+    port = int(os.environ.get('PORT', os.environ.get('FLASK_RUN_PORT', 5001)))
     print("🚀 NestMetrics API Server Starting...")
     print(f"📊 Loaded {len(df)} listings")
-    print(f"🌐 Server running on http://localhost:{port}")
-    app.run(debug=True, port=port, host='0.0.0.0')
+    print(f"🌐 Server running on port {port}")
+    app.run(debug=False, port=port, host='0.0.0.0')
