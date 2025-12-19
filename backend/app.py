@@ -151,9 +151,9 @@ def ml_predict():
                 predicted_price = ml_model.predict(features)[0]
                 
                 # Get confidence interval based on similar listings
-                price_col = 'price_$'
-                room_type_col = 'room type'
-                neighborhood_col = 'neighbourhood group'
+                price_col = 'price_$' if 'price_$' in df.columns else 'price'
+                room_type_col = 'room type' if 'room type' in df.columns else 'room_type'
+                neighborhood_col = 'neighbourhood group' if 'neighbourhood group' in df.columns else 'neighbourhood_group'
                 
                 similar_listings = df[
                     (df[room_type_col] == room_type) & 
@@ -181,9 +181,9 @@ def ml_predict():
                 pass
         
         # Fallback statistical prediction
-        price_col = 'price_$'
-        room_type_col = 'room type'
-        neighborhood_col = 'neighbourhood group'
+        price_col = 'price_$' if 'price_$' in df.columns else 'price'
+        room_type_col = 'room type' if 'room type' in df.columns else 'room_type'
+        neighborhood_col = 'neighbourhood group' if 'neighbourhood group' in df.columns else 'neighbourhood_group'
         
         similar_listings = df[
             (df[room_type_col] == room_type) & 
