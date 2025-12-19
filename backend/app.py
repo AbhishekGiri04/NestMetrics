@@ -14,7 +14,7 @@ import warnings
 warnings.filterwarnings('ignore')
 
 app = Flask(__name__)
-CORS(app, origins=['http://localhost:3000', 'http://localhost:5173'])
+CORS(app, origins=['*'])
 
 @app.after_request
 def after_request(response):
