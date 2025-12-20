@@ -141,7 +141,7 @@ function About() {
               </span>
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-700 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
             </a>
-            <a href="/deal-finder" className="px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl font-semibold text-white hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
+            <a href="/ml-predictor" className="px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl font-semibold text-white hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
               <span className="flex items-center">
                 <Star className="w-5 h-5 mr-2" />
                 View Demo

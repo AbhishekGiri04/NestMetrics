@@ -3,9 +3,11 @@ import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 
+import { API_BASE_URL } from '../config/api'
+
 // Create axios instance with base URL
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || 'http://localhost:5001',
+  baseURL: API_BASE_URL,
   timeout: 10000
 })
 import toast from 'react-hot-toast'
