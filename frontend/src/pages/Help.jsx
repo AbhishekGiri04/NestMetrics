@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import { HelpCircle, BookOpen, MessageCircle, Mail, ChevronDown, ChevronUp, Zap, Shield, BarChart3, Download, Clock, Send } from 'lucide-react'
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 function Help() {
   const [openFaq, setOpenFaq] = useState(null)
@@ -123,14 +124,12 @@ function Help() {
                   </motion.div>
                   <h3 className="text-2xl font-bold text-gray-900 mb-4">{card.title}</h3>
                   <p className="text-gray-600 leading-relaxed mb-6">{card.description}</p>
-                  <motion.a
-                    href={card.link}
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
+                  <Link
+                    to={card.link}
                     className={`block w-full py-3 bg-gradient-to-r ${card.color} text-white rounded-xl font-semibold shadow-lg hover:shadow-xl transition-all text-center`}
                   >
                     Learn More
-                  </motion.a>
+                  </Link>
                 </div>
               </motion.div>
             ))}

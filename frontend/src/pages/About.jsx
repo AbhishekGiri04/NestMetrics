@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
 import { Brain, Database, BarChart3, Code, Zap, TrendingUp, Users, Target, Github, Mail, Sparkles, Star, Award, Rocket } from 'lucide-react'
+import { Link } from 'react-router-dom'
 
 function About() {
 
@@ -134,19 +135,19 @@ function About() {
             transition={{ delay: 0.8, duration: 0.8 }}
             className="flex flex-wrap justify-center gap-4"
           >
-            <a href="/dashboard" className="group relative px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl font-semibold text-white shadow-2xl hover:shadow-blue-500/25 transition-all duration-300 transform hover:scale-105">
+            <Link to="/dashboard" className="group relative px-8 py-4 bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl font-semibold text-white shadow-2xl hover:shadow-blue-500/25 transition-all duration-300 transform hover:scale-105">
               <span className="relative z-10 flex items-center">
                 <Rocket className="w-5 h-5 mr-2" />
                 Explore Platform
               </span>
               <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-700 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            </a>
-            <a href="/ml-predictor" className="px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl font-semibold text-white hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
+            </Link>
+            <Link to="/ml-predictor" className="px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 rounded-2xl font-semibold text-white hover:bg-white/20 transition-all duration-300 transform hover:scale-105">
               <span className="flex items-center">
                 <Star className="w-5 h-5 mr-2" />
                 View Demo
               </span>
-            </a>
+            </Link>
           </motion.div>
         </div>
       </motion.section>
