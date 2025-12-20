@@ -1,7 +1,7 @@
 <h1 align="center">🏠 NestMetrics — AI-Powered Airbnb Smart Booking Insights</h1>
 
 <p align="center">
-  🚀 A comprehensive full-stack data science application that combines predictive analytics, real-time insights, and interactive visualizations to help travelers make smarter accommodation choices using <b>AI-powered intelligence</b>.
+  🚀 A full-stack AI-powered travel app that delivers predictive analytics, real-time insights, and interactive visualizations to help travelers make smarter accommodation choices.
 </p>
 
 <p align="center">
@@ -110,8 +110,6 @@ NestMetrics – Airbnb Smart Booking Insights/
 │   │   │   ├── 📄 Cards.jsx        # 📊 Statistics cards
 │   │   │   ├── 📄 Charts.jsx       # 📈 Data visualizations
 │   │   │   └── 📄 FeatureCard.jsx  # ✨ Feature showcase
-│   │   ├── 📂 config/              # ⚙️ Configuration files
-│   │   │   └── 📄 api.js           # 🔗 API endpoints config
 │   │   ├── 📂 pages/               # 📄 Main application pages
 │   │   │   ├── 📄 Dashboard.jsx    # 🏠 Main dashboard
 │   │   │   ├── 📄 MLPredictor.jsx  # 🤖 ML price predictions
@@ -127,11 +125,11 @@ NestMetrics – Airbnb Smart Booking Insights/
 │   │   ├── 📄 App.jsx              # 🎯 Main app component
 │   │   ├── 📄 main.jsx             # 🚀 Entry point
 │   │   └── 📄 index.css            # 🎨 Global styles
-│   ├── 📄 .env                     # 🔐 Local environment variables
-│   ├── 📄 .env.production          # 🌐 Production environment
+│   ├── 📄 .env.local               # 🔐 Local environment variables
 │   ├── 📄 .env.example             # 🔐 Environment template
 │   ├── 📄 package.json             # 📦 Dependencies
 │   ├── 📄 vite.config.js           # ⚡ Vite configuration
+│   ├── 📄 vercel.json              # 🌐 Vercel deployment config
 │   └── 📄 tailwind.config.js       # 🎨 Tailwind configuration
 ├── 📂 backend/                     # 🔧 Flask backend service
 │   ├── 📂 models/                  # 🤖 ML models and data
