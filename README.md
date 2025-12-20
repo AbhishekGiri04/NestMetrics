@@ -110,6 +110,8 @@ NestMetrics – Airbnb Smart Booking Insights/
 │   │   │   ├── 📄 Cards.jsx        # 📊 Statistics cards
 │   │   │   ├── 📄 Charts.jsx       # 📈 Data visualizations
 │   │   │   └── 📄 FeatureCard.jsx  # ✨ Feature showcase
+│   │   ├── 📂 config/              # ⚙️ Configuration files
+│   │   │   └── 📄 api.js           # 🔗 API endpoints config
 │   │   ├── 📂 pages/               # 📄 Main application pages
 │   │   │   ├── 📄 Dashboard.jsx    # 🏠 Main dashboard
 │   │   │   ├── 📄 MLPredictor.jsx  # 🤖 ML price predictions
@@ -119,11 +121,15 @@ NestMetrics – Airbnb Smart Booking Insights/
 │   │   │   ├── 📄 HostInsights.jsx # 👥 Host analytics
 │   │   │   ├── 📄 Listings.jsx     # 📋 Property listings
 │   │   │   ├── 📄 Analytics.jsx    # 📊 Advanced analytics
-│   │   │   └── 📄 LoadingPage.jsx  # ⏳ Loading screen
+│   │   │   ├── 📄 LoadingPage.jsx  # ⏳ Loading screen
+│   │   │   ├── 📄 Help.jsx          # ❓ Help & support
+│   │   │   └── 📄 About.jsx        # ℹ️ About platform
 │   │   ├── 📄 App.jsx              # 🎯 Main app component
 │   │   ├── 📄 main.jsx             # 🚀 Entry point
 │   │   └── 📄 index.css            # 🎨 Global styles
-│   ├── 📄 .env.example             # 🔐 Environment variables template
+│   ├── 📄 .env                     # 🔐 Local environment variables
+│   ├── 📄 .env.production          # 🌐 Production environment
+│   ├── 📄 .env.example             # 🔐 Environment template
 │   ├── 📄 package.json             # 📦 Dependencies
 │   ├── 📄 vite.config.js           # ⚡ Vite configuration
 │   └── 📄 tailwind.config.js       # 🎨 Tailwind configuration
@@ -134,6 +140,7 @@ NestMetrics – Airbnb Smart Booking Insights/
 │   ├── 📂 data/                    # 📁 Raw datasets
 │   │   └── 📄 Airbnb_Dataset.csv   # 📈 Original data (35MB)
 │   ├── 📄 app.py                   # 🚀 Flask application
+│   ├── 📄 render.yaml              # 🌐 Render deployment config
 │   └── 📄 requirements.txt         # 📦 Python dependencies
 ├── 📂 docs/                        # 📸 Screenshots and documentation
 ├── 📂 notebooks/                   # 📓 Jupyter notebooks
