@@ -8,10 +8,10 @@ function FeatureCard({ title, description, icon: Icon, link, gradient, delay = 0
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6, delay }}
       whileHover={{ y: -8, scale: 1.02 }}
-      className="group"
+      className="group relative z-50"
     >
-      <Link to={link} className="block">
-        <div className={`relative p-8 rounded-3xl bg-gradient-to-br ${gradient} shadow-xl hover:shadow-2xl transition-all duration-500 border border-white/20 backdrop-blur-sm overflow-hidden`}>
+      <Link to={link} className="block relative z-50">
+        <div className={`relative p-8 rounded-3xl bg-gradient-to-br ${gradient} shadow-xl hover:shadow-2xl transition-all duration-500 border border-white/20 backdrop-blur-sm overflow-hidden cursor-pointer`}>
           {/* Background Pattern */}
           <div className="absolute inset-0 opacity-10">
             <div className="absolute top-0 right-0 w-32 h-32 bg-white rounded-full -translate-y-16 translate-x-16"></div>

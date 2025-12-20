@@ -11,21 +11,19 @@ import Listings from './pages/Listings'
 import HostInsights from './pages/HostInsights'
 import Help from './pages/Help'
 import About from './pages/About'
-import DealFinder from './pages/PricePredictor'
-import BookingPredictor from './pages/ReviewPredictor'
-import TravelInsights from './pages/MarketInsights'
+import PricePredictor from './pages/PricePredictor'
+import ReviewPredictor from './pages/ReviewPredictor'
+import MarketInsights from './pages/MarketInsights'
 import MLPredictor from './pages/MLPredictor'
 import Analytics from './pages/Analytics'
 
 function App() {
   const [showLoading, setShowLoading] = useState(true)
-  const [redirectToDashboard, setRedirectToDashboard] = useState(false)
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowLoading(false)
-      setRedirectToDashboard(true)
-    }, 5000)
+    }, 3000)
     return () => clearTimeout(timer)
   }, [])
 
@@ -33,39 +31,29 @@ function App() {
     return <LoadingPage />
   }
 
-  if (redirectToDashboard) {
-    // Force redirect to dashboard after loading
-    window.history.replaceState(null, '', '/dashboard')
-  }
-
   return (
     <Router>
-      <Routes>
-        <Route path="/*" element={
-          <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
-            <div className="relative z-10 flex flex-col min-h-screen">
-              <Navbar />
-              <main className="flex-1">
-                <Routes>
-                  <Route path="/" element={<Dashboard />} />
-                  <Route path="/dashboard" element={<Dashboard />} />
-                  <Route path="/listings" element={<Listings />} />
-                  <Route path="/hosts" element={<HostInsights />} />
-                  <Route path="/deal-finder" element={<DealFinder />} />
-                  <Route path="/booking-predictor" element={<BookingPredictor />} />
-                  <Route path="/travel-insights" element={<TravelInsights />} />
-                  <Route path="/ml-predictor" element={<MLPredictor />} />
-                  <Route path="/analytics" element={<Analytics />} />
-                  <Route path="/help" element={<Help />} />
-                  <Route path="/about" element={<About />} />
-                </Routes>
-              </main>
-              <Footer />
-            </div>
-          </div>
-        } />
-
-      </Routes>
+      <div className="min-h-screen bg-gradient-to-br from-slate-50 via-blue-50 to-indigo-100">
+        <div className="relative z-10 flex flex-col min-h-screen">
+          <Navbar />
+          <main className="flex-1">
+            <Routes>
+              <Route path="/" element={<Dashboard />} />
+              <Route path="/dashboard" element={<Dashboard />} />
+              <Route path="/listings" element={<Listings />} />
+              <Route path="/hosts" element={<HostInsights />} />
+              <Route path="/price-predictor" element={<PricePredictor />} />
+              <Route path="/review-predictor" element={<ReviewPredictor />} />
+              <Route path="/market-insights" element={<MarketInsights />} />
+              <Route path="/ml-predictor" element={<MLPredictor />} />
+              <Route path="/analytics" element={<Analytics />} />
+              <Route path="/help" element={<Help />} />
+              <Route path="/about" element={<About />} />
+            </Routes>
+          </main>
+          <Footer />
+        </div>
+      </div>
       <Toaster 
         position="top-right"
         toastOptions={{
