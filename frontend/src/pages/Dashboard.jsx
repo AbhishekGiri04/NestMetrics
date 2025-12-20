@@ -132,7 +132,7 @@ function Dashboard() {
               className="flex flex-wrap justify-center gap-4"
             >
               <Link
-                to="/deal-finder"
+                to="/price-predictor"
                 className="group relative bg-emerald-500/10 backdrop-blur-md border border-emerald-400/20 hover:bg-emerald-500/20 hover:border-emerald-400/40 text-white px-6 py-3 rounded-xl font-medium shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 overflow-hidden"
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/20 to-green-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -142,7 +142,7 @@ function Dashboard() {
                 </div>
               </Link>
               <Link
-                to="/booking-predictor"
+                to="/review-predictor"
                 className="group relative bg-blue-500/10 backdrop-blur-md border border-blue-400/20 hover:bg-blue-500/20 hover:border-blue-400/40 text-white px-6 py-3 rounded-xl font-medium shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 overflow-hidden"
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 to-indigo-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -152,7 +152,7 @@ function Dashboard() {
                 </div>
               </Link>
               <Link
-                to="/travel-insights"
+                to="/market-insights"
                 className="group relative bg-purple-500/10 backdrop-blur-md border border-purple-400/20 hover:bg-purple-500/20 hover:border-purple-400/40 text-white px-6 py-3 rounded-xl font-medium shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105 hover:-translate-y-1 overflow-hidden"
               >
                 <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-pink-500/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -353,7 +353,7 @@ function Dashboard() {
               title="Smart Deal Finder"
               description="Discover unbeatable Airbnb deals with AI-powered price analysis and real-time market comparison."
               icon={DollarSign}
-              link="/deal-finder"
+              link="/price-predictor"
               gradient="from-emerald-500 via-green-500 to-teal-600"
               delay={0.1}
             />
@@ -380,7 +380,7 @@ function Dashboard() {
               title="Travel Intelligence"
               description="Access destination insights, optimal booking timing, and personalized travel recommendations."
               icon={Star}
-              link="/travel-insights"
+              link="/market-insights"
               gradient="from-amber-500 via-orange-500 to-red-500"
               delay={0.4}
             />
