@@ -188,7 +188,7 @@ NestMetrics – Airbnb Smart Booking Insights/
 1. Clone and start all services:
 
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/AbhishekGiri04/NestMetrics
    cd "NestMetrics – Airbnb Smart Booking Insights"
    chmod +x start.sh && ./start.sh
    ```
