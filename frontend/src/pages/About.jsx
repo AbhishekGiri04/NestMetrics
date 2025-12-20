@@ -557,7 +557,7 @@ function About() {
             </motion.a>
             
             <motion.a 
-              href="https://github.com" 
+              href="https://github.com/AbhishekGiri04/NestMetrics" 
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05, y: -5 }}

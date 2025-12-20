@@ -11,7 +11,7 @@ function Help() {
       description: 'Learn the basics of using NestMetrics to optimize your Airbnb listings.',
       icon: <BookOpen className="w-8 h-8" />,
       color: 'from-blue-500 to-cyan-500',
-      link: '/'
+      link: '/dashboard'
     },
     {
       title: 'FAQ',
@@ -238,7 +238,7 @@ function Help() {
             </motion.a>
 
             <motion.a
-              href="https://t.me/yourusername"
+              href="https://t.me/AbhishekGiri7"
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.05, y: -5 }}
