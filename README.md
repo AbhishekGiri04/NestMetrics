@@ -105,47 +105,67 @@ NestMetrics – Airbnb Smart Booking Insights/
 ├── 📂 frontend/                    # 🎨 React frontend application
 │   ├── 📂 src/
 │   │   ├── 📂 components/          # 🧩 Reusable UI components
-│   │   │   ├── 📄 Navbar.jsx       # 🔝 Navigation header
-│   │   │   ├── 📄 Footer.jsx       # 🔻 Footer with links
 │   │   │   ├── 📄 Cards.jsx        # 📊 Statistics cards
 │   │   │   ├── 📄 Charts.jsx       # 📈 Data visualizations
-│   │   │   └── 📄 FeatureCard.jsx  # ✨ Feature showcase
+│   │   │   ├── 📄 FeatureCard.jsx  # ✨ Feature showcase
+│   │   │   ├── 📄 Footer.jsx       # 🔻 Footer with links
+│   │   │   └── 📄 Navbar.jsx       # 🔝 Navigation header
+│   │   ├── 📂 config/              # ⚙️ Configuration files
+│   │   │   └── 📄 api.js           # 🔗 API endpoints config
 │   │   ├── 📂 pages/               # 📄 Main application pages
+│   │   │   ├── 📄 About.jsx        # ℹ️ About platform
+│   │   │   ├── 📄 Analytics.jsx    # 📊 Advanced analytics
 │   │   │   ├── 📄 Dashboard.jsx    # 🏠 Main dashboard
-│   │   │   ├── 📄 MLPredictor.jsx  # 🤖 ML price predictions
-│   │   │   ├── 📄 PricePredictor.jsx # 💰 Deal finder
-│   │   │   ├── 📄 ReviewPredictor.jsx # ⭐ Booking success
-│   │   │   ├── 📄 MarketInsights.jsx # 🗺️ Travel intelligence
+│   │   │   ├── 📄 Help.jsx          # ❓ Help & support
 │   │   │   ├── 📄 HostInsights.jsx # 👥 Host analytics
 │   │   │   ├── 📄 Listings.jsx     # 📋 Property listings
-│   │   │   ├── 📄 Analytics.jsx    # 📊 Advanced analytics
 │   │   │   ├── 📄 LoadingPage.jsx  # ⏳ Loading screen
-│   │   │   ├── 📄 Help.jsx          # ❓ Help & support
-│   │   │   └── 📄 About.jsx        # ℹ️ About platform
+│   │   │   ├── 📄 MarketInsights.jsx # 🗺️ Travel intelligence
+│   │   │   ├── 📄 MLPredictor.jsx  # 🤖 ML price predictions
+│   │   │   ├── 📄 PricePredictor.jsx # 💰 Deal finder
+│   │   │   └── 📄 ReviewPredictor.jsx # ⭐ Booking success
 │   │   ├── 📄 App.jsx              # 🎯 Main app component
-│   │   ├── 📄 main.jsx             # 🚀 Entry point
-│   │   └── 📄 index.css            # 🎨 Global styles
-│   ├── 📄 .env.local               # 🔐 Local environment variables
+│   │   ├── 📄 index.css            # 🎨 Global styles
+│   │   └── 📄 main.jsx             # 🚀 Entry point
+│   ├── 📄 .env                     # 🔐 Local environment variables
 │   ├── 📄 .env.example             # 🔐 Environment template
+│   ├── 📄 .env.local               # 🔐 Local environment override
+│   ├── 📄 .env.production          # 🌐 Production environment
+│   ├── 📄 index.html               # 🌐 HTML template
 │   ├── 📄 package.json             # 📦 Dependencies
-│   ├── 📄 vite.config.js           # ⚡ Vite configuration
+│   ├── 📄 package-lock.json        # 🔒 Dependency lock file
+│   ├── 📄 postcss.config.js        # 🎨 PostCSS configuration
+│   ├── 📄 tailwind.config.js       # 🎨 Tailwind configuration
 │   ├── 📄 vercel.json              # 🌐 Vercel deployment config
-│   └── 📄 tailwind.config.js       # 🎨 Tailwind configuration
+│   └── 📄 vite.config.js           # ⚡ Vite configuration
 ├── 📂 backend/                     # 🔧 Flask backend service
+│   ├── 📂 data/                    # 📁 Raw datasets
+│   │   └── 📄 Airbnb_Dataset.csv   # 📈 Original data (35MB)
 │   ├── 📂 models/                  # 🤖 ML models and data
 │   │   ├── 📄 model.pkl            # 🎯 Trained Random Forest (644MB)
 │   │   └── 📄 Processed.csv        # 📊 Clean dataset (18MB, 83K rows)
-│   ├── 📂 data/                    # 📁 Raw datasets
-│   │   └── 📄 Airbnb_Dataset.csv   # 📈 Original data (35MB)
+│   ├── 📄 .deps_installed          # 🔧 Dependency installation flag
 │   ├── 📄 app.py                   # 🚀 Flask application
 │   ├── 📄 render.yaml              # 🌐 Render deployment config
 │   └── 📄 requirements.txt         # 📦 Python dependencies
 ├── 📂 docs/                        # 📸 Screenshots and documentation
+│   ├── 📄 About_Page.png           # 🖼️ About page screenshot
+│   ├── 📄 Analytics_Page.png       # 📈 Analytics page screenshot
+│   ├── 📄 Booking_Success_Page.png # ⭐ Booking success screenshot
+│   ├── 📄 Deal_Finder_Page.png     # 💰 Deal finder screenshot
+│   ├── 📄 Help_And_Support.png     # ❓ Help page screenshot
+│   ├── 📄 Home_Page.png            # 🏠 Dashboard screenshot
+│   ├── 📄 Host_Insights.png        # 👥 Host insights screenshot
+│   ├── 📄 Listings_Page.png        # 📋 Listings page screenshot
+│   ├── 📄 Loading_Page.png         # ⏳ Loading screen screenshot
+│   ├── 📄 Prediction_Page.png      # 🤖 ML predictor screenshot
+│   └── 📄 Travel_Insights.png      # 🗺️ Travel insights screenshot
 ├── 📂 notebooks/                   # 📓 Jupyter notebooks
 │   └── 📄 model_training.ipynb     # 🧪 ML model training
-├── 📄 start.sh                     # 🚀 Start all services
 ├── 📄 .gitignore                   # 🚫 Git ignore rules
-└── 📄 README.md                    # 📖 Project documentation
+├── 📄 LICENSE                      # 📜 MIT License
+├── 📄 README.md                    # 📖 Project documentation
+└── 📄 start.sh                     # 🚀 Start all services
 
 ```
 <br>
@@ -341,6 +361,12 @@ cd frontend && rm -rf node_modules && npm install
 </a>
 
 <br/>
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
