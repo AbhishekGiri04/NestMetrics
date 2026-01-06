@@ -379,6 +379,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <div align="center">
 
-**© 2025 NestMetrics – Airbnb Smart Booking Insights. All Rights Reserved.**
+**© 2026 NestMetrics – Airbnb Smart Booking Insights. All Rights Reserved.**
 
 </div>
