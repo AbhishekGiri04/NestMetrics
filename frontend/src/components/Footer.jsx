@@ -66,7 +66,7 @@ function Footer() {
         
         <div className="border-t border-blue-200 mt-10 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-sm text-gray-600 font-medium">
-            © 2025 NestMetrics – Airbnb Smart Booking Insights. All rights reserved.
+            © 2026 NestMetrics – Airbnb Smart Booking Insights. All rights reserved.
           </p>
           <div className="flex space-x-6 mt-4 md:mt-0">
             <Link to="/about" className="text-sm text-gray-600 hover:text-blue-600 transition-all duration-200 hover:translate-x-1 font-medium">Privacy Policy</Link>
